@@ -1,0 +1,51 @@
+@use "./styles/partials/breakpoints" as *;
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background;
+  font-family: "Lato", sans-serif;
+  overflow: auto; 
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  background-color: $background;
+  z-index: 1;
+  padding-bottom: 2rem;
+
+  &__top{
+    display: flex;
+    align-items: center;
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.875rem 0;
+    color: $main-text;
+    text-align: center;
+  }
+
+  &__logo{
+    max-width: 3.5rem;
+    margin-right: 1rem;
+  }
+}
+
