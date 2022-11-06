@@ -1,6 +1,6 @@
 # Todo App.
 
-
+Sonar status: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Suriyanad_To-do-app&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Suriyanad_To-do-app)
 
 **Todo App is an intuitive task checklist application to help users manage their active and completed tasks.**
 
