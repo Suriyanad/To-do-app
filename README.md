@@ -4,13 +4,13 @@ Sonar status: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/m
 
 Todo App is an intuitive task checklist application to help users manage their active and completed tasks.
 
-Demo
+# Demo
 
 https://suriyanad-iamneo.netlify.app/
 
 
 
-Features
+# Features
 
 - Add drag and drop functionality to application
 - Fix bug where clicking done on task does not take it to completed tasks
@@ -19,7 +19,7 @@ Features
 - UI and Styling adjustments
 - Add Footer section at bottom of page
 
-Tech Stack
+# Tech Stack
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
