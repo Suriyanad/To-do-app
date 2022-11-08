@@ -4,6 +4,7 @@ Sonar status: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/m
 
 **Todo App is an intuitive task checklist application to help users manage their active and completed tasks.**
 
+Demo: https://suriyanad-iamneo.netlify.app/
 
 
 
