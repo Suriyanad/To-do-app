@@ -23,8 +23,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0; 
   background-color: $background;
   z-index: 1;
   padding-bottom: 2rem;
