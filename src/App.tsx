@@ -23,21 +23,18 @@ const App: React.FC = () => {
   const handleAddTodo = (e: React.FormEvent) => {
     e.preventDefault();
     if (todo) {
-      // Spread the current todos list and add a new todo object
       setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
       
       setTodo("");
     }
   };
 
-  // Enable touch vibration on mobile or tablet
   const onDragStart = () => {
     if (window.navigator.vibrate) {
       window.navigator.vibrate(100);
     }
   };
 
-  // Track the source and destination of the draggable component
   const onDragEnd = (result: DropResult) => {
     const { source, destination } = result;
 
@@ -52,7 +49,6 @@ const App: React.FC = () => {
       active = [...todos],
       complete = [...completedTodos];
 
-    // Check the source
     if (source.droppableId === "TodosList") {
       add = active[source.index];
       active.splice(source.index, 1);
@@ -62,21 +58,16 @@ const App: React.FC = () => {
       complete.splice(source.index, 1);
     }
 
-    // Check the destination
     if (destination.droppableId === "TodosList") {
-      // Take add variable and splice it into the destination
       active.splice(destination.index, 0, { ...add, isDone: false });
     } else {
-      // Take add variable and splice it into the destination
       complete.splice(destination.index, 0, { ...add, isDone: true });
     }
 
-    // Set the states of the containers to the dragged variables
     setCompletedTodos(complete);
     setTodos(active);
   };
 
-  // Set and save to localStorage upon change
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
     localStorage.setItem("completedTodos", JSON.stringify(completedTodos));
